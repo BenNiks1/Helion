@@ -55,9 +55,7 @@ function sync() {
 function html() {
   return src(path.src.pug)
     .pipe(
-      pug({
-        pretty: true,
-      })
+      pug()
     )
     .pipe(dest(path.build.html))
     .pipe(browserSync.stream());

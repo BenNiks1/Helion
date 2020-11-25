@@ -1,0 +1,80 @@
+/*intro
+===========================*/
+
+.intro {
+  position: relative;
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 400px;
+    padding: 0 208px;
+
+    background: url(../img/intro/bg.jpg) center no-repeat;
+    background-size: cover;
+
+    &-title {
+      font-family: $mBold;
+      font-size: 64px;
+      line-height: 78px;
+      color: #f9f6f2;
+
+      margin-bottom: 11px;
+    }
+    &-text {
+      font-family: $hRegular;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fff;
+
+      max-width: 450px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    bottom: -70px;
+    left: calc(50% - 1024px/2);
+    padding: 30px 0;
+
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 256px;
+      padding: 10px 0;
+      list-style: none;
+
+      border-left: 2px solid #dfdfdf;
+      &:first-child {
+        border-left: none;
+      }
+      &:hover {
+        a {
+          text-decoration: underline;
+        }
+      }
+      a {
+        font-family: $mRegular;
+        font-size: 22px;
+        line-height: 27px;
+        text-decoration: none;
+        color: #300f14;
+
+        width: 110px;
+      }
+      svg {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
