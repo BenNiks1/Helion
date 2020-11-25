@@ -1,0 +1,132 @@
+/*header 
+===================================*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  background: #43191f;
+  &__intro {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 170px;
+    height: 97px;
+
+    margin-right: 55px;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 29px;
+
+    font-size: 14px;
+    line-height: 16px;
+    &__list {
+      display: flex;
+      flex-direction: row;
+
+      margin-right: 127px;
+      &-item {
+        margin-right: 28px;
+        list-style: none;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: #f9f6f2;
+          text-decoration: none;
+        }
+      }
+    }
+    &__entry {
+      display: flex;
+      flex-direction: row;
+
+      margin-right: 41px;
+      &-item {
+        list-style: none;
+        &:first-child {
+          margin-right: 22px;
+        }
+        a {
+          color: #f4f2ee;
+          &:hover {
+            color: #d09e70;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+    &__btn {
+      padding: 14px 24px 9px 20px;
+      margin-right: 10px;
+
+      color: #d09e70;
+      font-family: $hRegular;
+      font-size: 14px;
+      background: #300f14;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+      border: 0;
+      outline: none;
+      cursor: pointer;
+    }
+    .switch-lang {
+      display: flex;
+      flex-direction: column;
+      &__item {
+        font-size: 12px;
+        font-family: $hBold;
+        color: #e3a873;
+        opacity: 0.3;
+
+        list-style: none;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+      &__item.active {
+        opacity: 1;
+      }
+    }
+  }
+  .nav {
+    font-family: $mBold;
+    font-size: 18px;
+    line-height: 21px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+
+      list-style: none;
+      color: #f9f6f2;
+      &-item {
+        text-align: center;
+        width: 152px;
+        border-left: 2px solid #300f14;
+        cursor: pointer;
+        &:last-child {
+          border-right: 2px solid #300f14;
+        }
+        &:hover {
+          color: #d09e70;
+          transition: .2s;
+          svg {
+            fill: #e3a873;
+            transition: .2s;
+          }
+        }
+        svg {
+          width: 8px;
+          height: 8px;
+          margin-left: 13px;
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

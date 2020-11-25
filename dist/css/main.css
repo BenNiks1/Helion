@@ -45,3 +45,308 @@
   font-weight: 400;
   font-style: normal;
 }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "HelveticaRegular";
+  background: rgba(232, 232, 232, 0.4);
+}
+
+/*header 
+===================================*/
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  background: #43191f;
+}
+
+.header__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__logo {
+  width: 170px;
+  height: 97px;
+  margin-right: 55px;
+}
+
+.header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header .links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 127px;
+}
+
+.header .links__list-item {
+  margin-right: 28px;
+  list-style: none;
+}
+
+.header .links__list-item:last-child {
+  margin-right: 0;
+}
+
+.header .links__list-item a {
+  color: #f9f6f2;
+  text-decoration: none;
+}
+
+.header .links__entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 41px;
+}
+
+.header .links__entry-item {
+  list-style: none;
+}
+
+.header .links__entry-item:first-child {
+  margin-right: 22px;
+}
+
+.header .links__entry-item a {
+  color: #f4f2ee;
+}
+
+.header .links__entry-item a:hover {
+  color: #d09e70;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header .links__btn {
+  padding: 14px 24px 9px 20px;
+  margin-right: 10px;
+  color: #d09e70;
+  font-family: "HelveticaRegular";
+  font-size: 14px;
+  background: #300f14;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.header .links .switch-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .links .switch-lang__item {
+  font-size: 12px;
+  font-family: "HelveticaBold";
+  color: #e3a873;
+  opacity: 0.3;
+  list-style: none;
+}
+
+.header .links .switch-lang__item:first-child {
+  margin-bottom: 10px;
+}
+
+.header .links .switch-lang__item.active {
+  opacity: 1;
+}
+
+.header .nav {
+  font-family: "MilioBold";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  color: #f9f6f2;
+}
+
+.header .nav__list-item {
+  text-align: center;
+  width: 152px;
+  border-left: 2px solid #300f14;
+  cursor: pointer;
+}
+
+.header .nav__list-item:last-child {
+  border-right: 2px solid #300f14;
+}
+
+.header .nav__list-item:hover {
+  color: #d09e70;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.header .nav__list-item:hover svg {
+  fill: #e3a873;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.header .nav__list-item svg {
+  width: 8px;
+  height: 8px;
+  margin-left: 13px;
+  fill: #fff;
+}
+
+/*intro
+===========================*/
+
+.intro {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+  padding: 0 208px;
+  background: url(../img/intro/bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.intro__inner-title {
+  font-family: "MilioBold";
+  font-size: 64px;
+  line-height: 78px;
+  color: #f9f6f2;
+  margin-bottom: 11px;
+}
+
+.intro__inner-text {
+  font-family: "HelveticaRegular";
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  max-width: 450px;
+}
+
+.intro__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: -70px;
+  left: calc(50% - 1024px/2);
+  padding: 30px 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 256px;
+  padding: 10px 0;
+  list-style: none;
+  border-left: 2px solid #dfdfdf;
+}
+
+.intro__list-item:first-child {
+  border-left: none;
+}
+
+.intro__list-item:hover a {
+  text-decoration: underline;
+}
+
+.intro__list-item a {
+  font-family: "MilioRegular";
+  font-size: 22px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #300f14;
+  width: 110px;
+}
+
+.intro__list-item svg {
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+}
