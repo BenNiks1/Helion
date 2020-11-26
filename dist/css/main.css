@@ -697,6 +697,34 @@ body {
   color: #fff;
 }
 
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.slick-dots button {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  font-size: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #535353;
+}
+
+.slick-dots li.slick-active button {
+  background: #d09e70;
+}
+
 .slick-arrow {
   position: absolute;
   top: 35%;
@@ -717,11 +745,4 @@ body {
 .slick-next {
   right: calc(50% - 31px / 2 - 562.5px);
   background: url("../img/accounts/arrow-right.png") no-repeat;
-}
-
-.slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
 }

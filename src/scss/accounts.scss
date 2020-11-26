@@ -1,0 +1,181 @@
+/*accounts
+====================*/
+
+.accounts {
+  background: #fff;
+  padding: 52px 0;
+  &__intro {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-title {
+      font-family: $mRegular;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 53px;
+      color: #43191f;
+
+      margin-right: 50px;
+      margin-bottom: 25px;
+    }
+    span {
+      max-width: 535px;
+      width: 100%;
+      height: 2px;
+      background: #d09e70;
+
+      margin-right: 25px;
+    }
+    &-link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #43191f;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 25px;
+      color: #979797;
+      margin-bottom: 35px;
+    }
+  }
+  .accounts-carusel {
+    .list__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: 31px;
+      margin-bottom: 52px;
+      max-width: 320px;
+      outline: 0;
+
+      list-style: none;
+      box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+      &:last-child {
+        margin-right: 0;
+      }
+      &-intro {
+        position: relative;
+        text-align: center;
+        padding: 39px 20px;
+        margin-bottom: 34px;
+      }
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+      }
+      &-title {
+        font-family: $mRegular;
+        font-size: 36px;
+        line-height: 51px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+      }
+      &-services {
+        padding: 0 20px;
+        margin-bottom: 27px;
+        li {
+          padding-left: 12px;
+          list-style: none;
+          font-size: 14px;
+          line-height: 41px;
+
+          border-bottom: 1px solid #c4c4c4;
+          &:first-child {
+            border-top: 1px solid #c4c4c4;
+          }
+          &::before {
+            content: "\25A0";
+            color: #d09e70;
+            width: 5px;
+            margin-right: 9px;
+          }
+        }
+      }
+      &-btn {
+        padding: 19px 70px 15px 70px;
+        margin-bottom: 20px;
+
+        border: 1px solid #2a2a2a;
+        background: none;
+
+        font-family: $hRegular;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #2a2a2a;
+        cursor: pointer;
+      }
+    }
+    .slick-current {
+      .list__item {
+        &-btn {
+          background: #d09e70;
+          border: 1px solid #d09e70;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.slick {
+  &-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    button {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+
+      font-size: 0;
+
+      outline: 0;
+      border: 0;
+      border-radius: 50%;
+      background: #535353;
+    }
+    li.slick-active {
+      button {
+        background: #d09e70;
+      }
+    }
+  }
+  &-arrow {
+    position: absolute;
+    top: 35%;
+
+    z-index: 10;
+    font-size: 0;
+    width: 37px;
+    height: 78px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+  }
+  &-prev {
+    left: calc(50% - 31px / 2 - 562.5px);
+    background: url("../img/accounts/arrow-left.png") no-repeat;
+  }
+  &-next {
+    right: calc(50% - 31px / 2 - 562.5px);
+    background: url("../img/accounts/arrow-right.png") no-repeat;
+  }
+}
