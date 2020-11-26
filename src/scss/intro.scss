@@ -4,17 +4,14 @@
 .intro {
   position: relative;
   margin-bottom: 120px;
+  background: url(../img/intro/bg.jpg) center no-repeat;
+  background-size: cover;
   &__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     height: 400px;
-    padding: 0 208px;
-
-    background: url(../img/intro/bg.jpg) center no-repeat;
-    background-size: cover;
-
     &-title {
       font-family: $mBold;
       font-size: 64px;
@@ -38,7 +35,7 @@
 
     position: absolute;
     bottom: -70px;
-    left: calc(50% - 1024px/2);
+    left: calc(50% - 1024px / 2);
     padding: 30px 0;
 
     background: #fff;

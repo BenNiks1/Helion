@@ -9,6 +9,7 @@ const path = {
     js: projectFolder + "/js/",
     img: projectFolder + "/img/",
     fonts: projectFolder + "/fonts/",
+    slick: projectFolder + "/slick/",
   },
   src: {
     pug: sourceFolder + "/*.pug",
@@ -16,6 +17,7 @@ const path = {
     js: sourceFolder + "/js/script.js",
     img: sourceFolder + "/img/**/**",
     fonts: sourceFolder + "/fonts/*.ttf",
+    slick: sourceFolder + "/slick/**",
   },
   watch: {
     pug: sourceFolder + "/**/*.pug",
@@ -52,11 +54,14 @@ function sync() {
   });
 }
 
+function slick() {
+  return src(path.src.slick)
+    .pipe(dest(path.build.slick))
+}
+
 function html() {
   return src(path.src.pug)
-    .pipe(
-      pug()
-    )
+    .pipe(pug())
     .pipe(dest(path.build.html))
     .pipe(browserSync.stream());
 }
@@ -164,11 +169,12 @@ function clean() {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(js, css, html, images, fonts),
+  gulp.parallel(js, css, html, images, fonts,slick),
   fontsStyle
 );
 const watch = gulp.parallel(build, watchFiles, sync);
 
+exports.slick = slick
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;
