@@ -1,0 +1,19 @@
+/*partners
+=========================*/
+.partners {
+  padding-top: 80px;
+  padding-bottom: 51px;
+  background: #fff;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    &-item {
+      margin-right: 19px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

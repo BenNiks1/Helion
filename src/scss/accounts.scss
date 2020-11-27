@@ -4,19 +4,19 @@
 .accounts {
   background: #fff;
   padding: 52px 0;
+  margin-bottom: 50px;
   &__intro {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 55px;
     &-title {
       font-family: $mRegular;
       font-weight: 400;
       font-size: 36px;
       line-height: 53px;
       color: #43191f;
-
-      margin-right: 50px;
-      margin-bottom: 25px;
     }
     span {
       max-width: 535px;
@@ -24,7 +24,6 @@
       height: 2px;
       background: #d09e70;
 
-      margin-right: 25px;
     }
     &-link {
       font-size: 14px;
