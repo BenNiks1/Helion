@@ -1,0 +1,36 @@
+header.header
+      a(href="index.html")
+        img(src="./img/logo.png" alt="Logo" class='header__logo')
+      div.header__intro
+        div.links 
+          ul.links__list
+            li.links__list-item 
+              a(href="#") Web-терминал
+            li.links__list-item 
+              a(href="./contact.html") Контакты
+            li.links__list-item
+              a(href="#") FAQ
+          ul.links__entry
+            li.links__entry-item 
+              a(href="#") Регистрация      
+            li.links__entry-item
+              a(href="#") Войти
+          button.links__btn  Перезвоните мне 
+          ul.switch-lang
+            li(class='switch-lang__item active') RU
+            li(class='switch-lang__item') EN
+        nav.nav
+          ul.nav__list    
+            li.nav__list-item О компании 
+              svg 
+                use(xlink:href='#arrow-down')
+            li.nav__list-item Торговля 
+              svg 
+                use(xlink:href='#arrow-down') 
+            li.nav__list-item Аналитика 
+              svg 
+                use(xlink:href='#arrow-down') 
+            li.nav__list-item Бонусы 
+              svg 
+                use(xlink:href='#arrow-down')
+            li.nav__list-item Партнерство

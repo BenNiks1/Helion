@@ -36,9 +36,14 @@
         &:last-child {
           margin-right: 0;
         }
+        
         a {
           color: #f9f6f2;
           text-decoration: none;
+          &:hover {
+            color: #d09e70;
+            transition: 0.2s;
+          }
         }
       }
     }
@@ -84,6 +89,7 @@
         opacity: 0.3;
 
         list-style: none;
+        cursor: pointer;
         &:first-child {
           margin-bottom: 10px;
         }
