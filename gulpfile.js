@@ -15,7 +15,7 @@ const path = {
     pug: sourceFolder + "/**.pug",
     css: sourceFolder + "/scss/main.scss",
     js: sourceFolder + "/js/script.js",
-    img: sourceFolder + "/img/**/**",
+    img: sourceFolder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",
     fonts: sourceFolder + "/fonts/*.ttf",
     slick: sourceFolder + "/slick/**",
   },
@@ -23,7 +23,7 @@ const path = {
     pug: sourceFolder + "/**/*.pug",
     css: sourceFolder + "/scss/**/*.scss",
     js: sourceFolder + "/js/**/*.js",
-    img: sourceFolder + "/img/**/**",
+    img: sourceFolder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",
   },
   clean: "./" + projectFolder + "/",
 };

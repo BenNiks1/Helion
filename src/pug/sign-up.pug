@@ -1,0 +1,24 @@
+.sign-up  
+  .sign-up__overlay
+  .sign-in__inner
+    .sign-up__intro
+      h2.sign-up__intro-title Регистрация
+      p.sign-up__intro-text Введите новый пароль. Рекомендуем использовать минимум одну цифру, один символ и одну заглавную букву. Пароль должен содержать не менее 8 знаков.
+    form.sign-up__form
+      .sign-up__form-inputs
+        input(class='sign-up__form-textarea' type="text" placeholder='Ваше имя:')
+        input(class='sign-up__form-textarea' type="text" placeholder='Логин:')
+        input(class='sign-up__form-textarea' type="email" placeholder='E-mail:')
+        input(class='sign-up__form-textarea' type="tel" placeholder='Телефон:')
+        input(class='sign-up__form-textarea' type="password" placeholder='Пароль:')
+        input(class='sign-up__form-textarea' type="password" placeholder='Повторите пароль:')
+        .sign-up__form-promocode
+          p.promocode-text Введите промокод, если вы пришли от друга:
+          input(type="email	" placeholder='Логин или E-mail:')
+      .sign-up__form-agreement
+        <p class='agreement-text'><input type="checkbox">Заявление о раскрытии рисков</p>
+        <p class='agreement-text'><input type="checkbox">Пользовательское соглашение</p>
+        <p class='agreement-text'><input type="checkbox">Заявление о конфиденциальности</p>
+      .sign-up__form-buttons
+        button.sign-up__form-btn Secondary Button
+        button.sign-up__form-btn Регистрация
