@@ -1,15 +1,15 @@
-
 /*contact
 ==================*/
 .contact {
-  padding-top:15vh;
-  background-image: url(../img/contact/bg-contact.png);
+  padding-top: 15vh;
+  background-image: url(../img/contact/bg-contact.jpg);
   &__inner {
     display: flex;
     justify-content: space-between;
   }
   &__info {
-    background: #fff;
+    background: linear-gradient(180deg, #ffffff 41.75%, #e8e8e8 129.57%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     padding: 43px 62px 69px 43px;
   }
@@ -69,9 +69,9 @@
       flex-direction: column;
       align-items: center;
       a {
-      &:first-child{
-        margin-bottom: 30px;
-      }
+        &:first-child {
+          margin-bottom: 30px;
+        }
         svg {
           width: 20px;
           height: 20px;
