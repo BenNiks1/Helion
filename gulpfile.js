@@ -12,7 +12,7 @@ const path = {
     slick: projectFolder + "/slick/",
   },
   src: {
-    pug: sourceFolder + "/index.pug",
+    pug: sourceFolder + "/**.pug",
     css: sourceFolder + "/scss/main.scss",
     js: sourceFolder + "/js/script.js",
     img: sourceFolder + "/img/**/**",

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./css/main.min.css")
+    title Contact
+  body
+    include ./pug/svg.pug 
+    include ./pug/header.pug
+    main
+      section.contact
+        div(class='contact__inner container')
+          .contact__info
+            .contact__intro
+              h2.contact__intro-title Как с нами связаться:
+              span
+            p.contact-city Moscow
+            .contact__links
+              p.contact__links-address Griffith Corporate Centre, P.O. Box 1510, Beachmont, St. Vincent and the Grenadines.
+              .contact__links-communication
+                a(href="tel:+7 964 519-3520" class='contact__communication-phone') +7 964 519-3520
+                a(href="mailto:info@helion.com" class='contact__communication-mail') info@helion.com
+              .contact__links-social-network
+                a(href="#")
+                  svg 
+                    use(xlink:href='#twitter')
+                a(href="#")
+                  svg 
+                    use(xlink:href='#facebook')
+          button.contact__button
+            p.contact__button-title Остались вопросы?
+            svg.contact__button-img
+              use(xlink:href='#contact-btn')
+            p.contact__button-text Закажите обратный звонок
+
+    include ./pug/footer.pug
