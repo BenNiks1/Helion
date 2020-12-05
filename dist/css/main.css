@@ -217,6 +217,10 @@ body {
   opacity: 1;
 }
 
+.header .menu {
+  display: none;
+}
+
 .header .nav {
   font-family: "MilioBold";
   font-size: 18px;
@@ -499,8 +503,16 @@ body {
   max-width: 400px;
 }
 
+.features__mobile {
+  display: none;
+}
+
 /*offers
 ============================*/
+
+.offers {
+  margin-bottom: 48px;
+}
 
 .offers__intro {
   display: -webkit-box;
@@ -512,7 +524,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 48px;
 }
 
 .offers__intro-title {
@@ -547,8 +558,6 @@ body {
 }
 
 .offers__list-item {
-  -webkit-box-sizing: padding-box;
-          box-sizing: padding-box;
   list-style: none;
   max-width: 320px;
   max-height: 206px;
@@ -612,6 +621,10 @@ body {
   font-size: 12px;
   line-height: 17px;
   color: #632831;
+}
+
+.offers__button {
+  display: none;
 }
 
 /*accounts
@@ -885,6 +898,10 @@ body {
   line-height: 22px;
 }
 
+.training__button {
+  display: none;
+}
+
 /*news
 =============================*/
 
@@ -1010,6 +1027,10 @@ body {
 .news__inner-text {
   font-size: 12px;
   line-height: 14px;
+}
+
+.news__button {
+  display: none;
 }
 
 /*company-news
@@ -1140,12 +1161,20 @@ body {
   color: #cb9c71;
 }
 
+.company-news__button {
+  display: none;
+}
+
+.company-news__mobile {
+  display: none;
+}
+
 /*demo
 =============================*/
 
 .banner {
   background: url(../img/demo/BG.png) center;
-  background-size: 1044px 299px;
+  background-size: 1044px 349px;
   padding: 15px 13px;
   margin-bottom: 60px;
 }
@@ -2033,4 +2062,901 @@ body {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+
+/*dividend
+==========================*/
+
+.dividends {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .header__logo {
+    width: 90px;
+    height: 51px;
+  }
+
+  .header__intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header .links {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+
+  .header .links__list {
+    margin-right: 35px;
+  }
+
+  .header .links__entry {
+    margin-right: 35px;
+  }
+
+  .header .links__btn {
+    display: none;
+  }
+
+  .header .menu {
+    display: block;
+  }
+
+  .header .menu svg {
+    width: 28px;
+    height: 15px;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .intro__inner {
+    margin-left: 35px;
+  }
+
+  .intro__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: -103px;
+  }
+
+  .intro__list-item {
+    padding: 20px 0;
+    border-left: 0;
+  }
+
+  .intro__list-item:nth-child(odd) {
+    border-right: 2px solid #dfdfdf;
+  }
+
+  .intro__list-item:nth-child(-n + 2) {
+    border-bottom: 2px solid #dfdfdf;
+  }
+
+  .intro__list-item:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background: #fff;
+    border: 0;
+    -webkit-box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .features__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  .features__intro-title {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .features__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .features__list-item:nth-child(3) {
+    display: none;
+  }
+
+  .features__list-title {
+    text-align: center;
+  }
+
+  .features__list-text {
+    text-align: center;
+  }
+
+  .offers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .offers__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  .offers__intro span {
+    max-width: 604px;
+  }
+
+  .offers__intro-link {
+    display: none;
+  }
+
+  .offers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .offers__list-item {
+    margin: 0;
+  }
+
+  .offers__list-item:first-child {
+    margin-right: 70px;
+    margin-bottom: 20px;
+  }
+
+  .offers__button {
+    display: block;
+    padding: 18px 0;
+    max-width: 300px;
+    width: 100%;
+    border: 2px solid #d09e70;
+    background: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #d09e70;
+  }
+
+  .training {
+    padding: 0 20px;
+  }
+
+  .training__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .training__intro-link {
+    display: none;
+  }
+
+  .training__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .training__inner-wrapper {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    text-align: center;
+  }
+
+  .training__inner-text {
+    text-align: left;
+    margin-bottom: 33px;
+  }
+
+  .training__button {
+    display: block;
+    padding: 18px 0;
+    max-width: 300px;
+    width: 100%;
+    border: 2px solid #d09e70;
+    background: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #d09e70;
+  }
+
+  .news {
+    padding: 0 10px;
+  }
+
+  .news__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .news__intro-link {
+    display: none;
+  }
+
+  .news__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .news__inner-item {
+    margin-bottom: 50px;
+  }
+
+  .news__inner-item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .news__inner-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .news__button {
+    display: block;
+    padding: 18px 0;
+    max-width: 300px;
+    width: 100%;
+    border: 2px solid #d09e70;
+    background: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #d09e70;
+  }
+
+  .company-news__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .company-news__intro-link {
+    display: none;
+  }
+
+  .company-news__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .company-news__inner-item {
+    margin-bottom: 20px;
+  }
+
+  .company-news__inner-item:first-child {
+    margin-right: 0;
+  }
+
+  .company-news__button {
+    display: block;
+    padding: 18px 0;
+    max-width: 300px;
+    width: 100%;
+    border: 2px solid #d09e70;
+    background: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #d09e70;
+  }
+
+  .banner {
+    margin: 0 20px;
+  }
+
+  .partners {
+    padding: 17px 20px;
+  }
+
+  .partners__list-item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__inner-nav {
+    display: none;
+  }
+
+  .footer__disclaimer {
+    padding: 22px  10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer__inner-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .links__entry {
+    display: none;
+  }
+
+  .header .links__btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .offers__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .offers__list-item {
+    margin-bottom: 20px;
+  }
+
+  .offers__list-item:first-child {
+    margin-right: 0;
+  }
+
+  .offers__list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    background: url(../img/demo/mobile-bg.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .banner .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .banner__inner-title {
+    text-align: center;
+  }
+
+  .banner__inner-title span {
+    display: none;
+  }
+
+  .banner__inner-open {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .header .links {
+    display: none;
+  }
+
+  .intro {
+    margin-bottom: 60px;
+  }
+
+  .intro__list {
+    display: none;
+  }
+
+  .features__list-item svg {
+    display: none;
+  }
+
+  .training__inner-wrapper iframe {
+    width: 100%;
+  }
+
+  .company-news {
+    padding: 0 10px;
+  }
+
+  .company-news__intro {
+    margin-bottom: 20px;
+  }
+
+  .company-news__intro-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 20px 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .company-news .desktop {
+    display: none;
+  }
+
+  .company-news__mobile {
+    display: block;
+  }
+
+  .company-news__mobile-item {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .company-news__mobile-item:first-child {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .company-news__mobile-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 14px;
+  }
+
+  .company-news__mobile-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .company-news__mobile-head time {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .company-news__mobile-title {
+    font-family: "MilioRegular";
+    font-size: 18px;
+    line-height: 21px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #43191f;
+    margin-bottom: 8px;
+  }
+
+  .company-news__mobile-img {
+    width: 80px;
+    height: 62px;
+    margin-right: 10px;
+  }
+
+  .company-news__mobile-text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .company-news__mobile-link {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    line-height: 20px;
+    color: #cb9c71;
+    text-decoration: none;
+  }
+
+  .footer__inner {
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__documents {
+    padding: 30px 50px;
+    margin-bottom: 35px;
+    margin-right: 0;
+    border-bottom: 1px solid #D09E70;
+  }
+
+  .footer__disclaimer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__disclaimer-text {
+    margin-right: 0;
+  }
+
+  .footer__disclaimer img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    width: 60px;
+    height: 34px;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .features {
+    padding: 0 10px;
+  }
+
+  .features__intro {
+    margin-bottom: 20px;
+  }
+
+  .features__intro-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 20px 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .features__list-desktop {
+    display: none;
+  }
+
+  .features__mobile {
+    display: block;
+  }
+
+  .features__mobile-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .features__mobile-text:first-child {
+    margin-bottom: 15px;
+  }
+
+  .offers {
+    padding: 0 10px;
+  }
+
+  .offers__intro {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .offers__intro-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 20px 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .training {
+    padding: 0 10px;
+  }
+
+  .training__intro-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 20px 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .news__intro-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 20px 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .news__inner-item:nth-child(-n+4) {
+    margin-bottom: 20px;
+  }
+
+  .news__inner-head {
+    margin-bottom: 6px;
+    padding: 0;
+  }
+
+  .news__inner-img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .dividends {
+    display: block;
+    background: #fff;
+    padding: 10px;
+  }
+
+  .dividends__inner {
+    border: 1px solid #d09e70;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .dividends__intro {
+    padding: 30px 15px;
+    background: #d09e70;
+  }
+
+  .dividends__intro-title {
+    font-family: "MilioRegular";
+    font-size: 18px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .dividends__timer {
+    margin-bottom: 10px;
+  }
+
+  .dividends__timer-num {
+    text-align: center;
+    font-family: "MilioBold";
+    font-size: 60px;
+    line-height: 84px;
+    color: #219653;
+  }
+
+  .dividends__timer-num--red {
+    color: red;
+  }
+
+  .dividends__timer-str {
+    font-size: 14px;
+    line-height: 16px;
+    color: #bdbdbd;
+    margin-right: 50px;
+  }
+
+  .dividends__timer-str:nth-child(2) {
+    margin-left: 37px;
+    margin-right: 67px;
+  }
+
+  .dividends__timer-str:last-child {
+    margin-right: 0;
+  }
+
+  .dividends__info {
+    margin-bottom: 15px;
+  }
+
+  .dividends__info-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+
+  .dividends__info-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #d09e70;
+  }
+
+  .dividends__pay-title {
+    padding: 10px 30px;
+    background: #d09e70;
+    margin-bottom: 15px;
+  }
+
+  .dividends__pay-title p {
+    text-align: center;
+    font-family: "MilioRegular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+  }
+
+  .dividends__list {
+    padding: 0 10px;
+    list-style: none;
+  }
+
+  .dividends__list-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .dividends__list-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .dividends__list-item {
+    margin-bottom: 30px;
+  }
+
+  .dividends__list-item:last-child {
+    margin-bottom: 15px;
+  }
+
+  .dividends__list-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .dividends__list-name span {
+    font-family: "HelveticaBold";
+  }
+
+  .dividends__list-cash {
+    font-size: 12px;
+    line-height: 14px;
+    color: #bdbdbd;
+  }
+
+  .dividends__list-cash span {
+    margin-left: 6px;
+    color: #000;
+  }
+
+  .dividends__list-time {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .dividends__list-time--red {
+    color: red;
+  }
+
+  .dividends__link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #43191f;
+  }
 }

@@ -1,11 +1,12 @@
 /*offers
 ============================*/
 .offers {
+  margin-bottom: 48px;
   &__intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 48px;
+
     &-title {
       font-family: $mRegular;
       font-weight: 400;
@@ -32,7 +33,6 @@
     display: flex;
     margin-bottom: 50px;
     &-item {
-      box-sizing: padding-box;
       list-style: none;
       max-width: 320px;
       max-height: 206px;
@@ -84,6 +84,92 @@
         font-size: 12px;
         line-height: 17px;
         color: #632831;
+      }
+    }
+  }
+  &__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__intro {
+      flex-direction: column;
+
+      margin-bottom: 55px;
+      span {
+        max-width: 604px;
+      }
+      &-link {
+        display: none;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-item {
+        margin: 0;
+        &:first-child {
+          margin-right: 70px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__button {
+      display: block;
+      padding: 18px 0;
+      max-width: 300px;
+      width: 100%;
+
+      border: 2px solid #d09e70;
+      background: none;
+
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #d09e70;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .offers {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      &-item {
+        margin-bottom: 20px;
+        &:first-child {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .offers {
+    padding: 0 10px;
+    &__intro {
+      width: 100%;
+      margin-bottom: 20px;
+      &-title {
+        display: flex;
+        align-self: flex-start;
+        margin: 20px 0;
+
+        font-size: 26px;
+        line-height: 30px;
       }
     }
   }

@@ -9,8 +9,29 @@ $(function () {
     dots: true,
     arrows: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
+// $(function () {
+//   $(".offers__list").slick({
+//     infinite: true,
+//     centerMode: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     initialSlide: 1,
+//     variableWidth: true,
+//     focusOnSelect: true,
+//     arrows:false,
+//   });
+// });
 
 // sing in
 const signIn = document.querySelector(".sign-in");

@@ -75,3 +75,52 @@
     }
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .intro {
+    &__inner {
+      margin-left: 35px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      padding: 0;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -103px;
+      &-item {
+        padding: 20px 0;
+        border-left: 0;
+        &:nth-child(odd) {
+          border-right: 2px solid #dfdfdf;
+        }
+        &:nth-child(-n + 2) {
+          border-bottom: 2px solid #dfdfdf;
+        }
+        &:hover {
+          transform: scale(1.1);
+          background: #fff;
+          border: 0;
+          box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.1);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .intro{
+    margin-bottom: 60px;
+    &__list{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:425px){
+  .intro{
+    display: none;
+  }
+}
