@@ -16,6 +16,7 @@ html(lang="ru")
     //- /header
     include ./pug/sign-in.pug
     include ./pug/sign-up.pug
+    include ./pug/menu.pug
     main
       //- intro
       section.intro
@@ -46,7 +47,7 @@ html(lang="ru")
           h2.features__intro-title Дивиденды и аналитика
           span
         .features__inner  
-          .features__list-wrapper
+          .features__list-desktop
             h3.features__list-title Дивиденды
             ul.features__list
               li.features__list-item
@@ -61,7 +62,7 @@ html(lang="ru")
                 svg 
                   use(xlink:href='#features-icon3')
                 p.features__list-text Покупайте акции крупных компаний в день экс-дивидендов и получайте прибыль на свой счет в день выплаты
-          .features__list-wrapper
+          .features__list-desktop
             h3.features__list-title Аналитика
             ul.features__list
               li.features__list-item
@@ -76,7 +77,67 @@ html(lang="ru")
                 svg 
                   use(xlink:href='#features-icon6')
                 p.features__list-text Регистрируйтесь на нашем сайте и получайте самую свежую аналитику на свою электронную почту еженедельно
+          .features__mobile
+            p.features__mobile-text Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
+            p.features__mobile-text Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
       //-/features 
+      //- dividends
+      section.dividends 
+        .dividends__inner
+          .dividends__intro
+            p.dividends__intro-title До выплаты дивиденда осталось:
+          .dividends__info  
+            .dividends___timer  
+              p.dividends__timer-num 00 : 05 : 
+                span.dividends__timer-num--red 51
+              span.dividends__timer-str часов
+              span.dividends__timer-str минут
+              span.dividends__timer-str секунд
+            .dividends__info-wrapper
+              img(src="./img/image.png", alt="")
+              p.dividends__info-text Число выданных разрешений на строительство (май), US 
+          .dividends__pay
+            .dividends__pay-title 
+              p Выплата дивидендов по CFDs
+            ul.dividends__list
+              li.dividends__list-item
+                .dividends__list-top
+                  p.dividends__list-name
+                    span #PG 
+                    | / Procter&amp;Gamble
+                  p.dividends__list-cash One stock:
+                    span $0.717
+                .dividends__list-bottom
+                  p.dividends__list-time 24 : 08 : 37 : 
+                    span.dividends__list-time--red 58
+                  p.dividends__list-cash Payout:
+                    span $717
+              li.dividends__list-item
+                .dividends__list-top
+                  p.dividends__list-name
+                    span #AAPL 
+                    | / Apple Inc.
+                  p.dividends__list-cash One stock:
+                    span $0.73
+                .dividends__list-bottom
+                  p.dividends__list-time 24 : 08 : 37 : 
+                    span.dividends__list-time--red 58
+                  p.dividends__list-cash Payout:
+                    span $730
+              li.dividends__list-item
+                .dividends__list-top
+                  p.dividends__list-name
+                    span #SBUX 
+                    | / Starbuck Corporation
+                  p.dividends__list-cash One stock:
+                    span $0.3
+                .dividends__list-bottom
+                  p.dividends__list-time 24 : 08 : 37 : 
+                    span.dividends__list-time--red 58
+                  p.dividends__list-cash Payout:
+                    span $300
+        a(href="#" class='dividends__link') Все Категории
+      //- /dividends
       //- offers
       section(class='offers container')  
         .offers__intro
@@ -102,6 +163,7 @@ html(lang="ru")
             .offers__list-offer  
               p до 16% на счет
               a(href="#") Получить
+        button.offers__button Подробнее
       //- /offers
       //- accounts
       section(class='accounts')  
@@ -180,6 +242,7 @@ html(lang="ru")
             p.training__inner-text Самостоятельное изучение торговли на финансовых рынках - всегда процесс очень кропотливый и длительный, который требует от новичка достаточно терпения, выдержки и силы воли. Разумеется, много трейдеров прошли путь самостоятельного обучения трейдингу и сейчас стабильно зарабатывают деньги на финансовых рынках, но зачем тратить столько времени впустую? На дворе XXI век - век высоких информационных технологий, существуют наиболее комфортные  и локаничные методы, которые сэкономят Ваше бесценное время и нервы.  
             iframe(width="500" height="243" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
           p.training__inner-text Просто подберите для себя подходящий формат обучения: лично в офисе, дистанционно или групповые мастер классы и вебинары - все остальное мы сделаем за Вас. Передайте себя в руки профессиональной команды финансовых советников “Helion Capital” и шаг за шагом мы научим Вас зарабатывать на финансовых рынках.
+          button.training__button Подробнее
 
       //- /training
       //- news
@@ -221,6 +284,7 @@ html(lang="ru")
                 a(href="#" class='news__inner-title') Падение торгов
                 time(datetime='2018-05-03') 03.05.18
               p.news__inner-text Среднее количество, ежедневно регистрирующихся торгов упало,примерно, вдвое по сравнению с декабрьскими...
+          button.news__button Подробнее
       //- /news
       //- company-news
       section(class='company-news container')
@@ -228,7 +292,7 @@ html(lang="ru")
           h2.company-news__intro-title Новости компании
           span
           a(href="#" class='company-news__intro-link') Больше новостей 
-        .company-news__inner  
+        div(class='company-news__inner desktop')  
           //- news 1
           article.company-news__inner-item
             img(src="./img/company-news/1.png" alt="News picture" class='company-news__inner-img')
@@ -247,6 +311,25 @@ html(lang="ru")
               .company-news__inner-footer
                 time(datetime='2018-05-12') 12.05.18  
                 a(href="#" class='company-news__inner-link') Подробнее...
+        //- mobile
+        .company-news__mobile
+          article.company-news__mobile-item
+            .company-news__mobile-wrapper
+              img(src="./img/company-news/1.png" alt="News picture" class='company-news__mobile-img')
+              .company-news__mobile-head
+                a(href="#" class='company-news__mobile-title') Официальные лица вогнали EUR...
+                time(datetime='2018-05-12') 12.05.18 
+            p.company-news__mobile-text В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a(href="#" class='company-news__mobile-link') Подробнее ...
+          article.company-news__mobile-item
+            .company-news__mobile-wrapper
+              img(src="./img/company-news/2.png" alt="News picture" class='company-news__mobile-img')
+              .company-news__mobile-head
+                a(href="#" class='company-news__mobile-title') Официальные лица вогнали EUR...
+                time(datetime='2018-05-12') 12.05.18 
+            p.company-news__mobile-text В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a(href="#" class='company-news__mobile-link') Подробнее ...
+          button.company-news__button Больше новостей 
       //- /company-news
       //- demo
       include ./pug/banner.pug

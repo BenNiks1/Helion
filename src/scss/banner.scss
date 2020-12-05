@@ -2,7 +2,7 @@
 =============================*/
 .banner {
   background: url(../img/demo/BG.png) center;
-  background-size: 1044px 299px;
+  background-size: 1044px 349px;
   padding: 15px 13px;
   margin-bottom: 60px;
   &__inner {
@@ -40,6 +40,38 @@
     }
     &-open {
       margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:1100px){
+  .banner{
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .banner{
+    background: url(../img/demo/mobile-bg.jpg) center no-repeat;
+    background-size: cover;
+    .buttons{
+      display: flex;
+      flex-direction: column;
+    }
+    &__inner{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-title{
+        text-align: center;
+        span{
+          display: none;
+        }
+      }
+      &-open{
+        margin-bottom: 10px;
+      }
     }
   }
 }
