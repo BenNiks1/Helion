@@ -23,7 +23,6 @@
       width: 100%;
       height: 2px;
       background: #d09e70;
-
     }
     &-link {
       font-size: 14px;
@@ -170,11 +169,54 @@
     cursor: pointer;
   }
   &-prev {
-    left: calc(50% - 31px / 2 - 562.5px);
+    left: -10%;
     background: url("../img/accounts/arrow-left.png") no-repeat;
   }
   &-next {
-    right: calc(50% - 31px / 2 - 562.5px);
+    right: -10%;
     background: url("../img/accounts/arrow-right.png") no-repeat;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .accounts {
+    &__intro {
+      flex-direction: column;
+
+      &-link {
+        display: none;
+      }
+    }
+  }
+  .accounts-carusel {
+    max-width: 671px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .accounts {
+    &__intro {
+      padding: 0 10px;
+      &-title {
+        align-self: flex-start;
+        margin-bottom: 20px;
+
+        font-size: 26px;
+        line-height: 30px;
+      }
+      span {
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .accounts-carusel {
+    max-width: 320px;
   }
 }

@@ -2,7 +2,7 @@ $(function () {
   $(".accounts-carusel").slick({
     infinite: true,
     centerMode: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 1,
     variableWidth: true,
@@ -11,27 +11,48 @@ $(function () {
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 1100,
+        breakpoint: 1350,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          centerMode: false,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 840,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          centerMode: false,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: false,
+          initialSlide: 0,
         },
       },
     ],
   });
 });
-// $(function () {
-//   $(".offers__list").slick({
-//     infinite: true,
-//     centerMode: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     initialSlide: 1,
-//     variableWidth: true,
-//     focusOnSelect: true,
-//     arrows:false,
-//   });
-// });
+
 
 // sing in
 const signIn = document.querySelector(".sign-in");
