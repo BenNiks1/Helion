@@ -53,7 +53,6 @@ $(function () {
   });
 });
 
-
 // sing in
 const signIn = document.querySelector(".sign-in");
 const signInBtn = document.getElementById("sign-in");
@@ -76,3 +75,14 @@ signUpBtn.onclick = () => {
 signUpOverlay.onclick = () => {
   signUp.style.display = "none";
 };
+
+const navList = document.querySelector(".nav__list");
+const subNav = document.querySelector(".subnav");
+
+navList.addEventListener("mouseenter", () => {
+  subNav.style.display = "flex";
+});
+
+subNav.addEventListener("mouseleave", () => {
+  subNav.style.display = "none";
+});

@@ -145,7 +145,7 @@
     }
     &:hover {
       .subnav {
-        display: flex;
+        // display: flex;
       }
     }
   }
@@ -154,7 +154,7 @@
 .subnav {
   display: none;
   position: absolute;
-  top: 105px;
+  top: 125px;
   left: calc(50% - 1032px / 2);
   padding-top: 50px;
   padding-bottom: 30px;
